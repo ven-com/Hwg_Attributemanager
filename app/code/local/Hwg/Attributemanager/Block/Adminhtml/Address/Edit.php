@@ -86,4 +86,14 @@ class Hwg_Attributemanager_Block_Adminhtml_Address_Edit extends Mage_Adminhtml_B
         }
        
     }
+
+    /**
+     * Get form action URL
+     *
+     * @return string
+     */
+    public function getFormActionUrl()
+    {
+        return $this->getUrl('*/hwgattributemanager_address/save', array('_current' => true));
+    }
 }

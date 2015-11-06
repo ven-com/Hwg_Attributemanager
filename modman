@@ -1,5 +1,6 @@
 # Hwg_Attributemanager
-app/code/local/Hwg/Attributemanager/              app/code/local/Hwg/Attributemanager/
-app/etc/modules/*                                 app/etc/modules/
-app/design/adminhtml/default/default/layout/*     app/design/adminhtml/default/default/layout/
-app/design/adminhtml/default/default/template/attributemanager/   app/design/adminhtml/default/default/template/attributemanager/
+app/code/local/Hwg/Attributemanager/                                app/code/local/Hwg/Attributemanager/
+CHANGELOG.md                                                        app/code/local/Hwg/Attributemanager/CHANGELOG.md
+app/etc/modules/Hwg_Attributemanager.xml                            app/etc/modules/Hwg_Attributemanager.xml
+app/design/adminhtml/default/default/layout/attributemanager.xml    app/design/adminhtml/default/default/layout/attributemanager.xml
+app/design/adminhtml/default/default/template/attributemanager/     app/design/adminhtml/default/default/template/attributemanager/

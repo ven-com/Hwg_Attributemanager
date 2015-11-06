@@ -78,4 +78,14 @@ class Hwg_Attributemanager_Block_Adminhtml_Customer_Edit extends Mage_Adminhtml_
         }
        
     }
+
+    /**
+     * Get form action URL
+     *
+     * @return string
+     */
+    public function getFormActionUrl()
+    {
+        return $this->getUrl('*/hwgattributemanager_customer/save', array('_current' => true));
+    }
 }

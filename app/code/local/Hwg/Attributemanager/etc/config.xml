@@ -2,18 +2,18 @@
 <config>
     <modules>
         <Hwg_Attributemanager>
-            <version>0.1.0</version>
+            <version>0.4.0</version>
         </Hwg_Attributemanager>
     </modules>
     <admin>
         <routers>
-			<attributemanager>
-				<use>admin</use>
-				<args>
-					<module>Hwg_Attributemanager</module>
-					<frontName>attributemanager</frontName>
-				</args>
-			</attributemanager>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <attributemanager after="Mage_Adminhtml">Hwg_Attributemanager_Adminhtml</attributemanager>
+                    </modules>
+                </args>
+            </adminhtml>
         </routers>
     </admin>
     <default>
@@ -28,17 +28,17 @@
                     <category_manager module="attributemanager">
                         <title>Category Attribute</title>
                         <sort_order>10</sort_order>
-                        <action>attributemanager/adminhtml_category/category</action>
+                        <action>adminhtml/hwgattributemanager_category/category</action>
                     </category_manager>
 					<customer_manager module="attributemanager">
                         <title>Customer Attribute</title>
                         <sort_order>20</sort_order>
-                        <action>attributemanager/adminhtml_customer/customer</action>
+                        <action>adminhtml/hwgattributemanager_customer/customer</action>
                     </customer_manager>
 					<customer_address_manager module="attributemanager">
                         <title>Customer Address Attribute</title>
                         <sort_order>30</sort_order>
-                        <action>attributemanager/adminhtml_address/address</action>
+                        <action>adminhtml/hwgattributemanager_address/address</action>
                     </customer_address_manager>
                 </children>
             </attributemanager>
